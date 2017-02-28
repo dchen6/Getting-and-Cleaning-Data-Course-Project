@@ -66,5 +66,5 @@ mdata_cast <- dcast(mdata_melt, subject + activity ~ variable, mean)
 str(mdata_cast)
 
 # save tidy data in local repo
-write.csv(mdata_cast, "./project/Getting-and-Cleaning-Data-Course-Project/tidy_data.csv", row.names = F)
+write.table(mdata_cast, "./project/Getting-and-Cleaning-Data-Course-Project/tidy_data.txt", row.names = F)
 
